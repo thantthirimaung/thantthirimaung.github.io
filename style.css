@@ -336,5 +336,194 @@ strong {
 
 
 
+/* =====================
+   Services
+===================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  background: var(--card-color);
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(106, 227, 255, 0.08);
+}
+
+.service-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.service-card h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  line-height: 1.5;
+}
+
+.service-desc {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  margin-bottom: 0.6rem;
+}
+
+.service-focus {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.4rem;
+}
+
+.service-tools {
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+/* =====================
+   Publications (Dark Theme)
+===================== */
+.publications {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.publications h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.publication-card {
+  background: var(--card-color);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(106, 227, 255, 0.08);
+}
+
+/* hide checkbox */
+.publication-card .toggle {
+  display: none;
+}
+
+/* header */
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+.publication-header h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.publication-header h3 span {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--muted-text);
+  margin-top: 0.2rem;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+/* external-style arrow (like certs) */
+.pub-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--accent);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+/* body */
+.publication-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.2rem;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+.publication-body p {
+  margin: 0.7rem 0;
+}
+
+.publication-body ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.publication-body li {
+  margin-bottom: 0.4rem;
+}
+
+/* link */
+.publication-body .link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0.8rem;
+
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  color: var(--accent);
+  text-decoration: none;
+  background: rgba(106, 227, 255, 0.08);
+  border: 1px solid rgba(106, 227, 255, 0.25);
+
+  transition: all 0.25s ease;
+}
+
+.publication-body .link a:hover {
+  background: rgba(106, 227, 255, 0.14);
+}
+
+.publication-body .link a:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* expand */
+.toggle:checked + .publication-header + .publication-body {
+  max-height: 900px;
+  padding: 1.2rem;
+}
+
+.toggle:checked + .publication-header .pub-icon {
+  transform: rotate(45deg);
+}
 
 

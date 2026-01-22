@@ -94,14 +94,53 @@
     <!-- Services -->
     <section class="section" id="services">
         <h2>My Services</h2>
-        <ul>
-            <li>Machine Learning Model Development</li>
-            <li>Data Analysis & Visualization</li>
-            <li>NLP & Computer Vision Solutions</li>
-        </ul>
-    </section>
 
-    <!-- Certifications -->
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🧠</div>
+                <h3>Machine Learning</h3>
+
+                <p class="service-desc">
+                    Build and optimize machine learning models for real-world problems.
+                </p>
+
+                <p class="service-focus">
+                    Classification · Regression · Model Evaluation
+                </p>
+
+                <p class="service-tools">
+                    Python · Scikit-learn · TensorFlow
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Data Analysis</h3>
+                <p>
+                    Data cleaning, analysis, and visualization to support data-driven decisions.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🗣️</div>
+                <h3>NLP Solutions</h3>
+                <p>
+                    Text classification, sentiment analysis, and low-resource language processing.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">👁️</div>
+                <h3>Computer Vision</h3>
+                <p>
+                    Image classification, object detection, and visual AI applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
     <!-- Certifications -->
     <section class="section" id="certifications">
         <h2>Certifications</h2>
@@ -237,6 +276,75 @@ Tuning, Regularization and Optimization- DeepLearning.AI">
 
         <p class="muted">More articles coming soon.</p>
     </section>
+
+    <section class="publications" id="publications">
+        <h2>Publications</h2>
+
+        <div class="publication-card">
+            <input type="checkbox" id="pub-1" class="toggle" />
+
+            <!-- Header / Preview -->
+            <label for="pub-1" class="publication-header">
+                <div>
+                    <h3>
+                        Crowdsource, Crawl, or Generate?
+                        <span>
+                            Creating SEA-VL, a Multicultural Vision-Language Dataset for Southeast Asia
+                        </span>
+                    </h3>
+
+                    <p class="meta">
+                        ACL 2025 · Published<br />
+                        <strong>Major Contribution:</strong> Myanmar Cultural Data
+                    </p>
+                </div>
+
+                <!-- Arrow icon (same style as certifications) -->
+                <svg class="pub-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" />
+                    <path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z" />
+                </svg>
+            </label>
+
+            <!-- Expanded Content -->
+            <div class="publication-body">
+                <p><strong>Status:</strong> Published (ACL 2025)</p>
+
+                <p><strong>Contribution:</strong></p>
+                <ul>
+                    <li>Myanmar cultural data collection</li>
+                    <li>Data validation and quality control</li>
+                </ul>
+
+                <p><strong>Overview:</strong></p>
+                <p>
+                    SEA-VL is a large-scale multicultural vision-language dataset designed to
+                    address the lack of Southeast Asian cultural representation in AI systems.
+                </p>
+
+                <p><strong>Key Highlights:</strong></p>
+                <ul>
+                    <li>1.28M culturally relevant image–text pairs</li>
+                    <li>Covers diverse Southeast Asian languages and cultures</li>
+                    <li>Built using crowdsourcing, crawling, and data generation</li>
+                    <li>Supports culturally aware and equitable AI</li>
+                </ul>
+
+                <p class="link">
+                    <a href="https://www.researchgate.net/publication/394303336_Crowdsource_Crawl_or_Generate_Creating_SEA-VL_a_Multicultural_Vision-Language_Dataset_for_Southeast_Asia"
+                        target="_blank">
+                        View Paper
+                        <svg class="cert-icon" viewBox="0 0 24 24">
+                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" />
+                            <path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z" />
+                        </svg>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <!-- Contact -->
