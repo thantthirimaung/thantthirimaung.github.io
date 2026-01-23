@@ -69,8 +69,105 @@
     <!-- Education -->
     <section class="section" id="education">
         <h2>Education</h2>
-        <p><strong>Bachelor’s Degree</strong> – Computer Science / Data Science</p>
+
+        <!-- ===== Current University ===== -->
+        <div class="edu-card">
+
+            <input type="checkbox" id="edu-1" class="edu-toggle">
+
+            <label for="edu-1" class="edu-header">
+                <div>
+                    <h3>Ton Duc Thang University</h3>
+                    <p class="edu-degree">
+                        B.Sc. in Computer Science
+                        <span>· 2022 – Present</span>
+                    </p>
+                    <p class="edu-meta">
+                        Final Year Student · CGPA: <strong>8.88 / 10</strong>
+                    </p>
+                </div>
+
+                <!-- Arrow -->
+                <svg class="edu-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5z" />
+                </svg>
+            </label>
+
+            <!-- Expandable Content -->
+            <div class="edu-body">
+                <ul class="edu-gpa">
+                    <li>Semester 6 GPA: 8.41 / 10</li>
+                    <li>Semester 5 GPA: 9.05 / 10</li>
+                    <li>Semester 4 GPA: 8.47 / 10</li>
+                    <li>Semester 3 GPA: 9.22 / 10</li>
+                    <li>Semester 2 GPA: 9.56 / 10</li>
+                </ul>
+
+                <p class="edu-focus"><strong>Selected Coursework:</strong></p>
+                <ul class="edu-courses">
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Speech Processing</li>
+                    <li>Computer Vision</li>
+                    <li>Massive Data Mining</li>
+                    <li>Data Analysis and Visualization</li>
+                    <li>Probability & Statistics</li>
+                    <li>Calculus</li>
+                    <li>Linear Algebra</li>
+                    <li>Software Engineering</li>
+                    <li>Computer Networks</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== Medical University ===== -->
+        <div class="edu-card">
+
+            <input type="checkbox" id="edu-2" class="edu-toggle">
+
+            <label for="edu-2" class="edu-header">
+                <div>
+                    <h3>University of Medicine, Magway (Myanmar)</h3>
+                    <p class="edu-degree">
+                        Medical Studies
+                        <span>· 2016 – 2020</span>
+                    </p>
+                    <p class="edu-meta">
+                        Completed 1st – 3rd Year
+                    </p>
+                </div>
+
+                <!-- Arrow -->
+                <svg class="edu-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5z" />
+                </svg>
+            </label>
+
+            <!-- Expandable Content -->
+            <div class="edu-body">
+                <p class="edu-desc">
+                    Completed three years of medical education before transitioning
+                    to Computer Science. Strong foundation for healthcare-focused AI
+                    and interdisciplinary research.
+                </p>
+
+                <p class="edu-focus"><strong>Selected Coursework:</strong></p>
+                <ul class="edu-courses">
+                    <li>Anatomy</li>
+                    <li>Biochemistry</li>
+                    <li>Physiology</li>
+                    <li>Microbiology</li>
+                    <li>Pharmacology</li>
+                    <li>Pathology</li>
+                </ul>
+            </div>
+        </div>
     </section>
+
+
+
+
 
     <!-- Experience -->
     <section class="section" id="experience">
@@ -94,7 +191,7 @@
     </section>
 
 
-     <!-- Publications -->
+    <!-- Publications -->
     <section class="publications" id="publications">
         <h2>Publications</h2>
 
@@ -161,7 +258,7 @@
             </div>
         </div>
     </section>
-       
+
     <!-- Certifications -->
     <section class="section" id="certifications">
         <h2>Certifications</h2>
@@ -272,58 +369,161 @@ Tuning, Regularization and Optimization- DeepLearning.AI">
 
 
     </section>
-    
+
     <!-- Services -->
     <section class="section" id="services">
         <h2>My Services</h2>
 
         <div class="services-grid">
 
+            <!-- Machine Learning -->
             <div class="service-card">
-                <div class="service-icon">🧠</div>
-                <h3>Machine Learning</h3>
+                <input type="checkbox" id="svc-ml" class="service-toggle">
 
-                <p class="service-desc">
-                    Build and optimize machine learning models for real-world problems.
-                </p>
+                <label for="svc-ml" class="service-header">
+                    <div>
+                        <div class="service-icon">🧠</div>
+                        <h3>Machine Learning</h3>
 
-                <p class="service-focus">
-                    Classification · Regression · Model Evaluation
-                </p>
+                        <p class="service-desc">
+                            Build and optimize ML models for real-world problems.
+                        </p>
 
-                <p class="service-tools">
-                    Python · Scikit-learn · TensorFlow
-                </p>
+                        <p class="service-focus">
+                            Classification · Regression · Evaluation
+                        </p>
+
+                        <p class="service-tools">
+                            Python · Scikit-learn · TensorFlow
+                        </p>
+                    </div>
+
+                    <span class="service-arrow">▾</span>
+                </label>
+
+                <div class="service-body">
+                    <ul>
+                        <li>Problem formulation & model selection</li>
+                        <li>Feature engineering & data preprocessing</li>
+                        <li>Model training, tuning, and evaluation</li>
+                        <li>Error analysis and performance optimization</li>
+                        <li>Deployment-ready model pipelines</li>
+                    </ul>
+                </div>
             </div>
 
-
+            <!-- Data Analysis -->
             <div class="service-card">
-                <div class="service-icon">📊</div>
-                <h3>Data Analysis</h3>
-                <p>
-                    Data cleaning, analysis, and visualization to support data-driven decisions.
-                </p>
+                <input type="checkbox" id="svc-da" class="service-toggle">
+
+                <label for="svc-da" class="service-header">
+                    <div>
+                        <div class="service-icon">📊</div>
+                        <h3>Data Analysis</h3>
+
+                        <p class="service-desc">
+                            Turn raw data into clear, actionable insights.
+                        </p>
+
+                        <p class="service-focus">
+                            EDA · Data Quality · Feature Engineering
+                        </p>
+
+                        <p class="service-tools">
+                            Pandas · NumPy · Matplotlib · Seaborn
+                        </p>
+                    </div>
+
+                    <span class="service-arrow">▾</span>
+                </label>
+
+                <div class="service-body">
+                    <ul>
+                        <li>Data cleaning and missing value handling</li>
+                        <li>Data validation and consistency checks</li>
+                        <li>Exploratory Data Analysis (EDA)</li>
+                        <li>Feature engineering and transformation</li>
+                        <li>Insight generation and reporting</li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- NLP -->
             <div class="service-card">
-                <div class="service-icon">🗣️</div>
-                <h3>NLP Solutions</h3>
-                <p>
-                    Text classification, sentiment analysis, and low-resource language processing.
-                </p>
+                <input type="checkbox" id="svc-nlp" class="service-toggle">
+
+                <label for="svc-nlp" class="service-header">
+                    <div>
+                        <div class="service-icon">🗣️</div>
+                        <h3>NLP Solutions</h3>
+
+                        <p class="service-desc">
+                            Text-based AI for multilingual and low-resource settings.
+                        </p>
+
+                        <p class="service-focus">
+                            Classification · Sentiment · Fine-tuning
+                        </p>
+
+                        <p class="service-tools">
+                            Hugging Face · spaCy · Transformers
+                        </p>
+                    </div>
+
+                    <span class="service-arrow">▾</span>
+                </label>
+
+                <div class="service-body">
+                    <ul>
+                        <li>Text preprocessing and tokenization</li>
+                        <li>Sentiment analysis and text classification</li>
+                        <li>Fine-tuning pretrained language models</li>
+                        <li>Low-resource language NLP (e.g. Burmese)</li>
+                        <li>Evaluation and error analysis</li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- Computer Vision -->
             <div class="service-card">
-                <div class="service-icon">👁️</div>
-                <h3>Computer Vision</h3>
-                <p>
-                    Image classification, object detection, and visual AI applications.
-                </p>
+                <input type="checkbox" id="svc-cv" class="service-toggle">
+
+                <label for="svc-cv" class="service-header">
+                    <div>
+                        <div class="service-icon">👁️</div>
+                        <h3>Computer Vision</h3>
+
+                        <p class="service-desc">
+                            Visual AI systems for images and real-world scenes.
+                        </p>
+
+                        <p class="service-focus">
+                            Detection · Classification · Annotation
+                        </p>
+
+                        <p class="service-tools">
+                            OpenCV · YOLO · PyTorch
+                        </p>
+                    </div>
+
+                    <span class="service-arrow">▾</span>
+                </label>
+
+                <div class="service-body">
+                    <ul>
+                        <li>Image classification and object detection</li>
+                        <li>Dataset preparation and labeling guidelines</li>
+                        <li>Model training and evaluation</li>
+                        <li>Error analysis (FP / FN)</li>
+                        <li>Deployment-ready CV pipelines</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
     </section>
-    
+
+
 
 
     <!-- Blogs -->
