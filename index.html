@@ -36,7 +36,7 @@
 
             </ul>
 
-            <a href="assets/resume.pdf" class="resume-btn" target="_blank">My Resume</a>
+            <!--<a href="assets/resume.pdf" class="resume-btn" target="_blank">My Resume</a> -->
 
         </div>
     </nav>
@@ -174,18 +174,18 @@
     <section class="section" id="experience">
         <h2>Experience</h2>
 
-        <!-- Experience 1 -->
+        <!-- Experience: Machine Learning Engineer -->
         <div class="exp-card">
-            <input type="checkbox" id="exp2" class="exp-toggle">
+            <input type="checkbox" id="exp-ml-engineer" class="exp-toggle">
 
-            <label for="exp2" class="exp-header">
+            <label for="exp-ml-engineer" class="exp-header">
                 <div>
-                    <h3>Machine Learning Engineer Intern</h3>
+                    <h3>Machine Learning Engineer</h3>
                     <p class="exp-role">
-                        Sentics · Automation Machinery Manufacturing<br>
+                        Sentics GmbH · Automation Machinery Manufacturing<br>
                         Remote (Wolfsburg, Germany)
                     </p>
-                    <p class="exp-meta">Feb 2025 – Present</p>
+                    <p class="exp-meta">Apr 2026 – Present</p>
                 </div>
 
                 <svg class="exp-arrow" viewBox="0 0 24 24">
@@ -195,10 +195,45 @@
 
             <div class="exp-body">
                 <ul>
-                    <li>Performed large-scale <strong>data labeling</strong> using X-AnyLabeling.</li>
-                    <li>Conducted data validation and dataset quality checks.</li>
-                    <li>Trained <strong>YOLOv11 detection & segmentation models</strong>.</li>
-                    <li>Built end-to-end <strong>model training workflows</strong>.</li>
+                    <li>Owned end-to-end <strong>training pipelines</strong> for YOLO detection, segmentation, and pose
+                        estimation models.</li>
+                    <li>Designed and optimized full <strong>ML workflows</strong>: preprocessing, augmentation,
+                        training, evaluation, and hyperparameter tuning.</li>
+                    <li>Performed large-scale <strong>data labeling</strong> using X-AnyLabeling; enforced dataset
+                        quality and annotation consistency.</li>
+                    <li>Conducted <strong>data validation and quality control</strong> to improve annotation reliability
+                        and model robustness.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experience: Machine Learning Engineer Intern -->
+        <div class="exp-card">
+            <input type="checkbox" id="exp-ml-intern" class="exp-toggle">
+
+            <label for="exp-ml-intern" class="exp-header">
+                <div>
+                    <h3>Machine Learning Engineer Intern</h3>
+                    <p class="exp-role">
+                        Sentics GmbH · Automation Machinery Manufacturing<br>
+                        Remote (Wolfsburg, Germany)
+                    </p>
+                    <p class="exp-meta">Feb 2025 – Mar 2026</p>
+                </div>
+
+                <svg class="exp-arrow" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5z" />
+                </svg>
+            </label>
+
+            <div class="exp-body">
+                <ul>
+                    <li>Performed large-scale <strong>data labeling</strong> using X-AnyLabeling and ensured dataset
+                        quality and consistency.</li>
+                    <li>Built <strong>automated data labeling pipelines</strong>, reducing manual verification effort.
+                    </li>
+                    <li>Conducted <strong>data validation and quality control</strong> to improve annotation reliability
+                        and model robustness.</li>
                 </ul>
             </div>
         </div>
@@ -262,14 +297,86 @@
 
 
 
+
+
     <!-- Projects -->
     <section class="section" id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li><strong>Myanmar Name Gender Classification</strong> – NLP model (93% accuracy)</li>
-            <li><strong>Demand Forecasting</strong> – Datathon project</li>
-            <li><strong>Memory Game</strong> – Haskell</li>
-        </ul>
+
+        <div class="cert-grid">
+
+            <!-- Project 1 -->
+            <div class="cert-card">
+                <img src="assets/projects/gender-classification.png" alt="Myanmar Gender Classification">
+                <h3>Myanmar Name Gender Classification</h3>
+                <p>NLP · 93% Accuracy</p>
+
+                <div class="project-links">
+                    <!-- Demo -->
+                    <a href="https://www.youtube.com/watch?v=UXZre7wBdBY" target="_blank" class="cert-link">
+                        <span>Live Demo</span>
+                        <svg class="cert-icon" viewBox="0 0 24 24">
+                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" />
+                            <path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z" />
+                        </svg>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/binarybrigade/myanmar-name-mf-classification" target="_blank"
+                        class="cert-link">
+                        <span>GitHub</span>
+                        <svg class="cert-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.66-.22.66-.48 
+                        0-.24-.01-1.02-.01-1.85-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.1-1.5-1.1-1.5-.9-.64.07-.63.07-.63 
+                        1 .07 1.53 1.05 1.53 1.05.88 1.55 2.3 1.1 2.86.84.09-.66.34-1.1.62-1.36-2.22-.26-4.55-1.14-4.55-5.07 
+                        0-1.12.39-2.03 1.02-2.75-.1-.26-.44-1.3.1-2.7 0 0 .83-.27 2.75 1.05A9.2 9.2 0 0112 6.8c.82.004 
+                        1.64.11 2.4.32 1.92-1.32 2.75-1.05 2.75-1.05.54 1.4.2 2.44.1 2.7.63.72 1.02 1.63 1.02 2.75 
+                        0 3.94-2.33 4.8-4.56 5.06.35.31.67.92.67 1.86 0 1.34-.01 2.42-.01 2.75 
+                        0 .27.17.59.67.48A10.03 10.03 0 0022 12.26C22 6.58 17.52 2 12 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Repeat same structure for other projects -->
+            <div class="cert-card">
+                <img src="assets/projects/restaurant-system.png" alt="Restaurant Management System">
+
+                <h3>Restaurant Management System</h3>
+                <p>ASP.NET MVC · C# · Full-Stack</p>
+
+                <p class="project-desc">
+                    Full-cycle web application for restaurant operations including menu management, reservations,
+                    payments, and admin control.
+                </p>
+
+                <div class="project-links">
+                    <!-- Demo -->
+                    <a href="https://www.youtube.com/watch?v=n6fcdD-Dlw0" target="_blank" class="cert-link">
+                        <span>Live Demo</span>
+                        <svg class="cert-icon" viewBox="0 0 24 24">
+                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z" />
+                            <path d="M5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z" />
+                        </svg>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="#" target="_blank" class="cert-link">
+                        <span>GitHub</span>
+                        <svg class="cert-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.66-.22.66-.48 
+                0-.24-.01-1.02-.01-1.85-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.1-1.5-1.1-1.5-.9-.64.07-.63.07-.63 
+                1 .07 1.53 1.05 1.53 1.05.88 1.55 2.3 1.1 2.86.84.09-.66.34-1.1.62-1.36-2.22-.26-4.55-1.14-4.55-5.07 
+                0-1.12.39-2.03 1.02-2.75-.1-.26-.44-1.3.1-2.7 0 0 .83-.27 2.75 1.05A9.2 9.2 0 0112 6.8c.82.004 
+                1.64.11 2.4.32 1.92-1.32 2.75-1.05 2.75-1.05.54 1.4.2 2.44.1 2.7.63.72 1.02 1.63 1.02 2.75 
+                0 3.94-2.33 4.8-4.56 5.06.35.31.67.92.67 1.86 0 1.34-.01 2.42-.01 2.75 
+                0 .27.17.59.67.48A10.03 10.03 0 0022 12.26C22 6.58 17.52 2 12 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
